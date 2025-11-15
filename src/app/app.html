@@ -7,12 +7,12 @@
 </div>
 
 <nav mat-tab-nav-bar backgroundColor="primary" class="bottom-nav" [tabPanel]="tabPanel">
-  <a mat-tab-link routerLink="/guidelines" routerLinkActive #rla1="routerLinkActive" [active]="rla1.isActive">
+  <div mat-tab-link routerLink="/guidelines" routerLinkActive #rla1="routerLinkActive" [active]="rla1.isActive">
     🌿 Guidelines
-  </a>
-  <a mat-tab-link routerLink="/todo" routerLinkActive #rla2="routerLinkActive" [active]="rla2.isActive">
+  </div>
+  <div mat-tab-link routerLink="/todo" routerLinkActive #rla2="routerLinkActive" [active]="rla2.isActive">
     ✅ Todo List
-  </a>
+  </div>
 </nav>
 
 <mat-tab-nav-panel #tabPanel></mat-tab-nav-panel>
