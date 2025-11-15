@@ -1,0 +1,28 @@
+.guidelines-page {
+  padding: 16px;
+}
+
+.guidelines-page h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.guideline-card {
+  margin-bottom: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.guideline-card mat-card-title {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.guideline-card mat-card-content p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #444;
+}

@@ -1,10 +1,14 @@
-<mat-toolbar color="primary">
-  <span>Calm & Organized</span>
-</mat-toolbar>
+<div>
+  <mat-toolbar color="primary">
+    <span>Calm & Organized</span>
+  </mat-toolbar>
 
-<div class="content">
-  <router-outlet></router-outlet>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+  <mat-tab-nav-panel #tabPanel></mat-tab-nav-panel>
 </div>
+
 
 <nav mat-tab-nav-bar backgroundColor="primary" class="bottom-nav" [tabPanel]="tabPanel">
   <div mat-tab-link routerLink="/guidelines" routerLinkActive #rla1="routerLinkActive" [active]="rla1.isActive">
@@ -14,5 +18,3 @@
     ✅ Todo List
   </div>
 </nav>
-
-<mat-tab-nav-panel #tabPanel></mat-tab-nav-panel>
