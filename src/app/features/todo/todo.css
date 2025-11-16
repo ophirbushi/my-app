@@ -1,0 +1,39 @@
+.todo-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 16px;
+  text-align: center;
+}
+
+.todo-input {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  justify-content: flex-start;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 16px;
+  color: #333;
+  text-align: left;
+}

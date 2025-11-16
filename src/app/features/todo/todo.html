@@ -1,1 +1,25 @@
-<p>todo works!</p>
+<div class="todo-container">
+  <h2>To-Do List</h2>
+
+  <div class="todo-input">
+    <mat-form-field appearance="outline">
+      <mat-label>Add a new task</mat-label>
+      <input matInput [(ngModel)]="newTask" />
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="addTask()">Add</button>
+  </div>
+
+  <div class="todo-list">
+    <mat-card class="todo-card" *ngFor="let task of tasks">
+      <mat-card-content>
+        <div class="task-item">
+          <mat-checkbox [(ngModel)]="task.completed"></mat-checkbox>
+          <span [class.completed]="task.completed">{{ task.title }}</span>
+          <button mat-icon-button color="warn" (click)="deleteTask(task.id)">
+            <mat-icon>delete</mat-icon>
+          </button>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
